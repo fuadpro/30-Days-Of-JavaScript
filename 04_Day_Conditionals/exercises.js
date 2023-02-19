@@ -24,7 +24,6 @@
 //                   console.log(`You are ${myAge - age} years little than me.`)
 //               }
 
-
 // 3. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways 
 //                using if else
 
@@ -51,7 +50,6 @@
 //                              a < b ?  `${a} is less than ${b}` : 
 //                              `${a} is equal to ${b}`;
 
-
 // 4. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 
 //           let numb = prompt('Enter a number: ');
@@ -61,8 +59,7 @@
 //               console.log(`${numb} is an odd number`); 
 //           }
 
-
-//              Exercises: Level 2
+//                             Exercises: Level 2
 
 // 1. Write a code which can give grades to students according to theirs scores:
 // 90-100, A
