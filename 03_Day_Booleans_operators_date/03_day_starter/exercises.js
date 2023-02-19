@@ -63,13 +63,13 @@
 
 //                                          Exercises: Level 2 
 //
-// 1. 
+// 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 //     let base = prompt ("Base daxil et : ", "0");
 //     let hund = prompt ("H daxil et : ", "0");
 
 //     let area = 0.5 * base * hund;
 //     console.log(area);
-// 2.
+// 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 //   let a = prompt ("a daxil et : ", "0");
 //   let b = prompt ("b daxil et : ", "0");
 //   let c = prompt ("c daxil et : ", "0");
@@ -91,3 +91,22 @@
 
 // let perimeter = a + b + c;
 // console.log(perimeter);
+
+// 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+// let a = prompt ("a daxil et : ");
+// let b = prompt ("b daxil et : ");
+
+// let rectangle  = 2 * a +  2 * b;
+//          or and  Number()  and parseFloat()
+// let rectangle  = 2 * (+a + +b);
+// console.log(rectangle)
+
+// 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+// let r = prompt ("Radius daxil et : ");
+// const pi= 3.14;
+// let areaCircle  = pi * r * r;
+// let circumference = 2 * pi * r ;
+// console.log(areaCircle, circumference );
+
+
+
