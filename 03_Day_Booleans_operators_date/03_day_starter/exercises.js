@@ -108,5 +108,106 @@
 // let circumference = 2 * pi * r ;
 // console.log(areaCircle, circumference );
 
+//   5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+// Define the equation
+// let equation = "y = 2x - 2";
+
+// // Extract the coefficients
+// let m = 2; // slope
+// let b = -2; // y-intercept
+
+// // Calculate the x-intercept
+// let x_intercept = -b/m;
+
+// // Output the results
+// console.log("Equation: " + equation);        // Equation: y = 2x - 2
+// console.log("Slope: " + m);                  //Slope: 2
+// console.log("Y-Intercept: " + b);            //Y-Intercept: -2
+// console.log("X-Intercept: " + x_intercept);  //X-Intercept: 1
+
+// 6.Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
 
+
+
+// 7.Compare the slope of above two questions.
+
+
+
+// 8.Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.  
+
+
+
+
+
+
+// 9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+// let a = prompt ("Hour daxil et : ");
+// let b = prompt ("Rate daxil et : ");
+// let earning = a * b;
+
+// console.log(earning);
+
+// 10.If the length of your name is greater than 7 say, your name is long else say your name is short.
+// let name = 'Fuad';
+// if(name.lenght > 7){
+//   console.log("Grater")
+// }else{
+//   console.log("Short")
+// }
+
+// 11. Compare your first name length and your family name length and you should get this output.
+
+// let firstName = 'Asabeneh';
+// let lastName = 'Yetayeh';
+
+// Your first name, Asabeneh is longer than your family name, Yetayeh
+
+
+// 12.Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+
+// let myAge = 250;
+// let yourAge = 25;
+
+
+// I am 225 years older than you.
+
+// 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+// Enter birth year: 1995
+// You are 25. You are old enough to drive
+
+// Enter birth year: 2005
+// You are 15. You will be allowed to drive after 3 years.
+
+
+// 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+
+
+// Enter number of years you live: 100
+// You lived 3153600000 seconds.
+
+
+// 15. Create a human readable time format using the Date time object
+
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
+
+
+//                                          Exercises: Level 3
+
+// 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two 
+// digits(7 hours should be 07 and 5 minutes should be 05 )
+
+const now = new Date();
+const year = now.getFullYear();
+const month = (now.getMonth() + 1).toString().padStart(2, '0');
+const day = now.getDate().toString().padStart(2, '0');
+const hours = now.getHours().toString().padStart(2, '0');
+const minutes = now.getMinutes().toString().padStart(2, '0');
+const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes} ${hours >= 12 ? 'PM' : 'AM'}`;
+
+console.log(formattedDateTime);
+
+// YYY-MM-DD HH:mm eg. 20120-01-02 07:05
