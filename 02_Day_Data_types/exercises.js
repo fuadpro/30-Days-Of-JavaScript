@@ -1,19 +1,18 @@
-//    Day 2: Exercises
-//                          Exercise: Level 1
+//                                 Exercise: Level 1
 // 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
-
+//        let challenge = '30 Days Of JavaScript';
 
 // 2. Print the string on the browser console using console.log()
-
+//        console.log(challenge);
 
 // 3. Print the length of the string on the browser console using console.log()
-
+//        console.log(challenge.length)
 
 // 4. Change all the string characters to capital letters using toUpperCase() method
-
+//        console.log(challenge.toUpperCase())
 
 // 5. Change all the string characters to lowercase letters using toLowerCase() method
-
+//        console.log(challenge.toLowerCase())
 
 // 6. Cut (slice) out the first word of the string using substr() or substring() method
 
@@ -121,15 +120,44 @@
 
 //                    Exercises: Level 3
 // 1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+//       let str = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+//       let wordToCount = 'love';
+//       console.log(str.match(/love/gi).length);
+//                    OR   RegExp
+//         let regex = new RegExp('\\b' + wordToCount + '\\b', 'gi');
+//         let count = (str.match(regex) || []).length;
+//         console.log(count);
+//                      OR     For
+//         let words = str.toLowerCase().split(' ');
+//         let count = 0;
+//         for (let i = 0; i < words.length; i++) {
+//           if (words[i] === wordToCount) {
+//             count++;
+//           }
+//         }
+//                      OR     Reduce
+//             let words = sentence.toLowerCase().split(' ');
+//             let count = words.reduce((acc, word) => {
+//               if (word === wordToCount) {
+//                 acc++;
+//               }
+//               return acc;
+//             }, 0);
+//             console.log(count);
 
 // 2. Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+//       let str = "You cannot end a sentence with because because because is a conjunction";
+//       let regex = /because/gi;                    //or      console.log(str.match(regex).length);
+//       let count = (str.match(regex) || []).length;         
+//       console.log(count);
 
 // 3. Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 
-//  const sentence =
-//  '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;
-//  I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? 
-// %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching.' ;
+ const sentence ='%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;
+ I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!?%Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching.' ;
+ const cleanText = sentence.replace(/[^a-zA-Z\s.!?]/g, '');
+ console.log(cleanText);
+
 
 // 4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 
