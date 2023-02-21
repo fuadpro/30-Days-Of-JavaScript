@@ -77,9 +77,47 @@
             // }
 
 // 9. Use for loop to iterate from 0 to 100 and print only prime numbers
+            // let inputValue= 7;
+            // let isprime= inputValue == 1 ? false:true;
+            // for(let i=2;i<inputValue;i++){
+            // inputValue%i==0? isprime*=false :isprime*=true;
+            // };
+            // console.log( `${inputValue} is ${isprime? 'prime':'not prime'} number`);
+                        // 1. Method 
+                // function isPrime(num) {
+                //     if(num <= 2) return false;
+                //     for (let i = 2; i < num; i++) {
+                //         if( num % i == 0) 
+                //             return false;
+                //      }
+                //     return true;
+                // }
+                // for(let i = 0; i < 100; i++){
+                //     if(isPrime(i)) console.log(i);
+                // }
+                        // 2. Method 
+                // for (let i = 0; i <= 100; i++) {
+                //     let isPrime = (i > 2) ? true : false;
+                //     for (let j = 2; j < i; j++) {
+                //       if (i % j === 0) {
+                //         isPrime = false;
+                //         break;
+                //       }
+                //     }
+                //     if (isPrime) {
+                //       console.log(i);
+                //     }
+                //   }
 
+
+
+ 
 
 // 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+
+
+
+
 // The sum of all numbers from 0 to 100 is 5050.
 
 // 11.Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
