@@ -110,20 +110,43 @@
                 //   }
 
 
-
- 
-
 // 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
-
-
-
-
+                    // let sum = 0;
+                    // for (let i = 0; i <= 100; i++) {
+                    // sum += i;
+                    // }
+                    // console.log("The sum of all numbers from 0 to 100 is: " + sum);
 // The sum of all numbers from 0 to 100 is 5050.
 
 // 11.Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+                    // let sum = 0;
+                    // let sum2 = 0;
+                    // for (let i = 0; i <= 100; i++) {
+                    //     if (i % 2 === 0) {
+                    //     sum2 += i;
+                    // }
+                    // else if (i % 2 !== 0) {
+                    //     sum += i;
+    }
+                    // }
+                    // console.log(`The sum of all evens from 0 to 100 is ${sum}. And the sum of all odds from 0 to 100 is ${sum2}.`);
+
 // The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
 
 // 12.Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+                    // let sum = 0;
+                    // let sum2 = 0;
+                    // let arr = [];
+                    // for (let i = 0; i <= 100; i++) {
+                    //     if (i % 2 === 0) {
+                    //         sum2 += i;
+                    //     }
+                    //     else if (i % 2 !== 0) {
+                    //         sum += i;
+                    //     }
+                    // }
+                    // arr.push(sum,sum2)
+                    // console.log(arr)
 //   [2550, 2500]
 
 // 13. Develop a small script which generate array of 5 random numbers
